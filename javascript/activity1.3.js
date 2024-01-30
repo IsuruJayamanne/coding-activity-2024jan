@@ -13,6 +13,7 @@ function objectProjection(source, prototype) {
 
   return projectedObject;
 }
+// ----------------------------
 
 // demo
 

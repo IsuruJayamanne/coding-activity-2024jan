@@ -12,7 +12,8 @@ function orderByTotal(inputArr) {
   newArray.sort((a, b) => b.Total - a.Total);
 
   return newArray;
-}
+};
+// ----------------------------
 
 // demo
 

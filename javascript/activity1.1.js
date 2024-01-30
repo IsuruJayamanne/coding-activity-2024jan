@@ -9,6 +9,7 @@ Date.prototype.daysTo = function (toDate) {
   let diffMs = toDate - this;
   return Math.floor(diffMs / (1000 * 60 * 60 * 24));
 };
+// ----------------------------
 
 // demo
 
