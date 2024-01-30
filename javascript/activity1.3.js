@@ -6,13 +6,8 @@ function objectProjection(source, prototype) {
   // merge source object with prototype object
   for (let key in prototype) {
     if (source.hasOwnProperty(key)) {
-      if (typeof source[key] === "object") {
-        // if it has sub objects
-        // recursively call the method to merge sub objects
-        projectedObject[key] = objectProjection(source[key], prototype[key]);
-      } else {
-        projectedObject[key] = source[key];
-      }
+      // add the value from source object
+      projectedObject[key] = source[key];
     }
   }
 
@@ -32,11 +27,10 @@ let src = {
   prop12: 12,
 };
 let proto = {
-    prop11:{
-        prop22: null
-    }
+  prop11: {
+    prop22: null,
+  },
 };
 
 let projectedObj = objectProjection(src, proto);
 console.log(projectedObj);
-
