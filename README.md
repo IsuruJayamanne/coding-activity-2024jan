@@ -34,6 +34,7 @@ In the directory "rest-api"
 npm install
 node activity2.1.js
 ```
+Note: Should provide a APIKey for google calendar access and a CalendarId 
 
 ## Activity 3
 In the directory "sql"
