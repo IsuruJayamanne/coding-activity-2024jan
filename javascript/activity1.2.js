@@ -1,5 +1,11 @@
 // code
-// method to get array ordered by total
+
+/**
+ * method to get array ordered by total
+ * Calculates total for each item and sort by total
+ * @param {{amount:Number, quantity:Number}[]} inputArr - An array of objects, each containing an amount and quantity properties.
+ * @returns {{amount:Number, quantity:Number, Total:Number}[]} A new array of objects sorted by Total in descending order.
+ */
 function orderByTotal(inputArr) {
   // calculate total
   let newArray = inputArr.map((item) => ({

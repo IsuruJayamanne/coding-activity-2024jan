@@ -1,5 +1,10 @@
 // code
-// method to merge object with a prototype taking intersection
+/**
+ * method to merge object with a prototype taking intersection
+ * @param {object} source 
+ * @param {object} prototype 
+ * @returns {object} - A new object with properties from source object which is also present in prototype object
+ */
 function objectProjection(source, prototype) {
   let projectedObject = {};
 
